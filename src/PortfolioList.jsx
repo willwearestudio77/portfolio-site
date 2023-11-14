@@ -1,8 +1,9 @@
 import {
     useQuery,
 } from '@tanstack/react-query'
-
+import { CircularProgress } from '@mui/material'
 import './App.css'
+
 
 const ENDPOINT = 'https://eu-west-2.cdn.hygraph.com/content/clog33cey6q1g01uk3rat0c7u/master'
 
@@ -45,9 +46,7 @@ function PortfolioList() {
     })
 
     if (isLoading) return <div>
-        <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-
-        </svg>Loading...</div>
+        <CircularProgress color="secondary" /></div>
 
     if (error) return <p>An error occured: {error.message}</p>
     console.log(data.data.projects)

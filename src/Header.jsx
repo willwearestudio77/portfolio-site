@@ -22,7 +22,7 @@ export default function Header() {
               
               <img
                 className="rounded-full h-20 w-auto"
-                src='../public/will-ellis-full-circuit-websites-2.jpg'
+                src='./will-ellis-full-circuit-websites-2.jpg'
                 alt=""
                 
               />
@@ -60,7 +60,7 @@ export default function Header() {
                 <span className="sr-only">Your Company</span>
                 <img
                 className="rounded-full h-20 w-auto"
-                src='../public/will-ellis-full-circuit-websites-2.jpg'
+                src='./will-ellis-full-circuit-websites-2.jpg'
                 alt=""
                 
               />
